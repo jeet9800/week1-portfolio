@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jeet Portfolio</title>
+    <link rel="stylesheet" href="style.css">
     
 </head>
 <body>
     <header>
         <h1>Jeet Mahata</h1>
         <nav>
+            <button id="darkModeToggle">🌗 Toggle Dark Mode</button>
+
             <a href="#">About</a>
             <a href="#">Projects</a>
             <a href="#">Contact</a>
@@ -20,17 +23,41 @@
             <h2>About Me</h2>
             <p>Hii, I am Jeet Mahata </p>
         </section>
+
         <section>
+            <button id="toggleProject">Toggle Project Info</button>
+
             <h2>Projects</h2>
-            <article>
+            <article id="ProjectInfo">
                 <h3>Weather App</h3>
                 <p>A simple app that shows weather data using an API.</p>
             </article>
             <p></p>
         </section>
+        <section>
+            <h2>Contact Me</h2>
+            <form id="contactForm">
+            <label for="name">Name:</label><br />
+            <input type="text" id="name" name="name" required /><br />
+
+            <label for="email">Email:</label><br />
+            <input type="email" id="email" name="email" required /><br />
+
+            <label for="message">Message:</label><br />
+            <textarea id="message" name="message" rows="4" required></textarea><br />
+
+            <button type="submit">Send</button>
+     </form>
+            <p id="formMessage" style="margin-top: 10px; color: red;"></p>
+</section>
+
+        
     </main>
     <footer>
         <p>&copy; 2025 Jeet Mahata </p>
     </footer>
+    <button id="scrollTopBtn" title="Go to top">⬆️</button>
+
+    <script src="script.js"></script>
 </body>
 </html>
